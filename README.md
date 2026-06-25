@@ -1,28 +1,16 @@
 # Student Specialization Classifier
 
 ## Overview
-This project predicts the most suitable specialization for students based on their skills, interests, and academic profile using Machine Learning and Neural Networks.
 
-## Technologies Used
-- Python
-- Pandas
-- NumPy
-- Scikit-Learn
-- Matplotlib
-- Seaborn
+Student Specialization Classifier is a Machine Learning and Neural Network project designed to predict the most suitable Computer Science specialization for students based on their skills, interests, and academic background.
 
-## Machine Learning Pipeline
+The system analyzes student-related features, applies data preprocessing and feature engineering techniques, and uses a Neural Network model to recommend the best specialization.
 
-1. Data Cleaning
-2. Exploratory Data Analysis (EDA)
-3. Feature Engineering
-4. Feature Selection
-5. Data Scaling
-6. Neural Network (MLPClassifier)
-7. Model Evaluation
-8. Prediction
+---
 
 ## Predicted Specializations
+
+The model predicts one of the following specializations:
 
 - Artificial Intelligence (AI)
 - Cyber Security
@@ -30,33 +18,154 @@ This project predicts the most suitable specialization for students based on the
 - Backend Development
 - Software Testing
 
-## Dataset
+---
 
-The dataset contains students' skills, interests, and academic information used to determine the most suitable specialization.
+## Technologies Used
+
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Scikit-Learn
+- Neural Networks (MLPClassifier)
+
+---
+
+## Machine Learning Pipeline
+
+### 1. Data Cleaning
+- Handle missing values
+- Remove inconsistencies
+- Prepare data for analysis
+
+### 2. Exploratory Data Analysis (EDA)
+- Data distribution analysis
+- Feature relationships
+- Class distribution analysis
+
+### 3. Feature Engineering
+- Create useful features
+- Improve model performance
+
+### 4. Feature Selection
+- Select the most important features
+- Reduce noise and dimensionality
+
+### 5. Data Encoding
+- Label Encoding
+- One-Hot Encoding
+
+### 6. Feature Scaling
+- StandardScaler
+
+### 7. Model Training
+- Neural Network (MLPClassifier)
+
+### 8. Model Evaluation
+- Accuracy Score
+- Confusion Matrix
+- Classification Report
+
+### 9. Prediction
+- Predict the most suitable specialization for new students
+
+---
+
+## Project Structure
+
+```text
+student-specialization-classifier
+│
+├── images/
+│   ├── confusion_matrix.png
+│   ├── heatmap.png
+│   ├── histogram.png
+│   ├── class_distribution.png
+│   └── classification_report.png
+│
+├── students_raw_dirty-1.csv
+├── main.py
+├── requirements.txt
+├── .gitignore
+└── README.md
+```
+
+---
+
+## Visualizations
+
+### Data Distribution
+
+![Histogram](images/histogram.png)
+
+### Correlation Heatmap
+
+![Heatmap](images/heatmap.png)
+
+### Class Distribution
+
+![Class Distribution](images/class_distribution.png)
+
+### Confusion Matrix
+
+![Confusion Matrix](images/confusion_matrix.png)
+
+### Classification Report
+
+![Classification Report](images/classification_report.png)
+
+---
 
 ## Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/osama-rafat/student-specialization-classifier.git
+```
+
+Install dependencies:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-## Run Project
+Run the project:
 
 ```bash
 python main.py
 ```
 
-## Evaluation
+---
+
+## Evaluation Metrics
 
 The model is evaluated using:
 
 - Accuracy Score
+- Precision
+- Recall
+- F1-Score
 - Confusion Matrix
-- Classification Report
+
+---
 
 ## Future Improvements
 
 - Hyperparameter Tuning
 - Deep Learning Models
-- Web Deployment
-- More Features Engineering
+- Model Deployment using Flask
+- Web Application Interface
+- Larger Dataset
+- Advanced Feature Engineering
+
+---
+
+## Author
+
+Osama Rafat
+
+Machine Learning and Data Science Enthusiast
+
+GitHub: https://github.com/osama-rafat
